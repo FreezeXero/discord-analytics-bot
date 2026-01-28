@@ -23,10 +23,10 @@ application {
 }
 
 jar {
+    archiveFileName = "app.jar"
+
     manifest {
-        attributes(
-                'Main-Class': 'com.rafay.bot.Main'
-        )
+        attributes 'Main-Class': 'com.rafay.bot.Main'
     }
 
     from {
@@ -35,6 +35,7 @@ jar {
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
+
 
 
 
