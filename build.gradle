@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.rafay'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("net.dv8tion:JDA:5.0.0-beta.24")
+    implementation("org.xerial:sqlite-jdbc:3.46.0.0")
+
+    // Logging for JDA
+    implementation("org.slf4j:slf4j-simple:2.0.13")
+}
+
+application {
+    mainClass = 'com.rafay.bot.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
