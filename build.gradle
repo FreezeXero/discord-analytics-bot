@@ -22,8 +22,4 @@ application {
     mainClass = 'com.rafay.bot.Main'
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}
+
